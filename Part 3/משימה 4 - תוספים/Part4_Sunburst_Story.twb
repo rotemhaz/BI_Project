@@ -1,0 +1,809 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook original-version='18.1' source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Extensions />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Group9_DW' inline='true' name='federated.1d79q9p093c5hl13pi2my0l90aa5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IEMDBS' name='sqlserver.0b233080th1g9014qaq6w05jen9t'>
+            <connection authentication='sspi' class='sqlserver' dbname='Group9_DW' minimum-driver-version='SQL Server Native Client 10.0' odbc-native-protocol='yes' one-time-sql='' server='IEMDBS' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.0b233080th1g9014qaq6w05jen9t' name='DW_FACT_FLIGHTS' table='[dbo].[DW_FACT_FLIGHTS]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='sqlserver.0b233080th1g9014qaq6w05jen9t' name='DW_FACT_FLIGHTS' table='[dbo].[DW_FACT_FLIGHTS]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>flight id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[flight id]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>flight id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airplane id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[airplane id]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>airplane id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>from</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>to</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>departure date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[departure date]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>departure date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>departure time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[departure time]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>departure time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <precision>7</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[late]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>late</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[employee id]</local-name>
+            <parent-name>[DW_FACT_FLIGHTS]</parent-name>
+            <remote-alias>employee id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='DW_FACT_FLIGHTS' datatype='table' name='[__tableau_internal_object_id__].[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]' role='measure' type='quantitative' />
+      <column aggregation='Hour' datatype='datetime' name='[departure time]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[employee id]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[flight id]' role='dimension' type='ordinal' />
+      <group hidden='true' name='[Exclusions (Continent,country (DW_DIM_COUNTRIES))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Continent:nk]' />
+          <groupfilter function='level-members' level='[none:country (DW_DIM_COUNTRIES):nk]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='country, city' />
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DW_FACT_FLIGHTS' id='DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710'>
+            <properties context=''>
+              <relation connection='sqlserver.0b233080th1g9014qaq6w05jen9t' name='DW_FACT_FLIGHTS' table='[dbo].[DW_FACT_FLIGHTS]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='26'>Flights by Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Group9_DW' name='federated.1d79q9p093c5hl13pi2my0l90aa5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d79q9p093c5hl13pi2my0l90aa5'>
+            <_.fcp.ObjectModelTableType.true...column caption='DW_FACT_FLIGHTS' datatype='table' name='[__tableau_internal_object_id__].[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[departure date]' role='dimension' type='ordinal' />
+            <column-instance column='[departure date]' derivation='Day' name='[dy:departure date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[departure date]' derivation='Month' name='[mn:departure date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[departure date]' derivation='Quarter' name='[qr:departure date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[departure date]' derivation='Year' name='[yr:departure date:ok]' pivot='key' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='DW_FACT_FLIGHTS' datatype='integer' name='[__tableau_internal_object_id__].[DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.1d79q9p093c5hl13pi2my0l90aa5].[yr:departure date:ok] / ([federated.1d79q9p093c5hl13pi2my0l90aa5].[qr:departure date:ok] / ([federated.1d79q9p093c5hl13pi2my0l90aa5].[mn:departure date:ok] / [federated.1d79q9p093c5hl13pi2my0l90aa5].[dy:departure date:ok])))</rows>
+        <cols>[federated.1d79q9p093c5hl13pi2my0l90aa5].[__tableau_internal_object_id__].[cnt:DW_FACT_FLIGHTS_AA901B83797C4374924EDB9C05B94710:qk]</cols>
+      </table>
+      <simple-id uuid='{EBEA27CA-C225-4F80-BE14-2F54551A081E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='218' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone fixed-size='160' h='16598' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='78319' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='20851'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='In order to maximize the marketing effort, the best thing to do is to analyze the traffic among quarters and months, for each year.' captured-sheet='Sunburst' id='1' />
+                  <story-point caption='In the year of 2022, we can see that there was an increase of the number of flights in the company. Therfore, we can realize that the company should intensify it&apos;s marketing effort.' captured-sheet='Sunburst' id='2' />
+                  <story-point caption='As we can see, the number of flights splits almost equaly in each quarter each month. Therefore, the marketing effort should be splited equaly between the months also.' captured-sheet='Sunburst' id='4' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{FE76A57B-7865-4247-9458-4017147B4BA7}' />
+    </dashboard>
+    <dashboard name='Sunburst'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone fixed-size='663' forceUpdate='true' h='98000' id='7' is-fixed='true' param='[com.appsfortableau.extensions.show-me-more-share].[0.1.0].[https://extensions.appsfortableau.com/login/yJWmBYahjThxyt9%2FowLySQneSVcOffYz7yWhrs6Kd9Oxc3I4zP3CFptx3DeHYZVsiLDvMRDPVZRSfM8TDrH4Y%2FfHexitifiDRc1ZJpvy3AD8jQgnNfDGar4of4F4jlms2mkGh99CbULdy4jj46j9gg%3D%3D]' type-v2='dashboard-object' w='98400' x='800' y='1000'>
+              <add-in add-in-id='com.appsfortableau.extensions.show-me-more-share' extension-url='https://extensions.appsfortableau.com/login/yJWmBYahjThxyt9%2FowLySQneSVcOffYz7yWhrs6Kd9Oxc3I4zP3CFptx3DeHYZVsiLDvMRDPVZRSfM8TDrH4Y%2FfHexitifiDRc1ZJpvy3AD8jQgnNfDGar4of4F4jlms2mkGh99CbULdy4jj46j9gg%3D%3D' extension-version='0.1.0' instance-id='DB5A3BB8AF5A4BBFA2A4777D2099E710'>
+                <instance-settings>
+                  <setting key='backgroundColor' value='#FFFFFF' />
+                  <setting key='colorScheme' value='[&quot;#4e79a7&quot;,&quot;#a0cbe8&quot;,&quot;#f28e2b&quot;,&quot;#ffbe7d&quot;,&quot;#59a14f&quot;,&quot;#8cd17d&quot;,&quot;#b6992d&quot;,&quot;#f1ce63&quot;,&quot;#499894&quot;,&quot;#86bcb6&quot;,&quot;#e15759&quot;,&quot;#ff9d9a&quot;,&quot;#79706e&quot;,&quot;#bab0ac&quot;,&quot;#d37295&quot;,&quot;#fabfd2&quot;,&quot;#b07aa1&quot;,&quot;#d4a6c8&quot;,&quot;#9d7660&quot;,&quot;#d7b5a6&quot;]' />
+                  <setting key='convertedToNewActions' value='true' />
+                  <setting key='dashboardActions' value='[]' />
+                  <setting key='dimensionColors' value='[{&quot;fieldName&quot;:&quot;YEAR(departure date)&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date)&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date)&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date)&quot;,&quot;color&quot;:&quot;#F28E2B&quot;}]' />
+                  <setting key='dimensions' value='[&quot;YEAR(departure date)&quot;,&quot;QUARTER(departure date)&quot;,&quot;MONTH(departure date)&quot;,&quot;DAY(departure date)&quot;]' />
+                  <setting key='divergingColorScheme' value='[null,null,null,[&quot;#d8b365&quot;,&quot;#f5f5f5&quot;,&quot;#5ab4ac&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#f5f5f5&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;]]' />
+                  <setting key='enableAnalytics' value='false' />
+                  <setting key='enableAnalyticsDrillDepth' value='false' />
+                  <setting key='enableAnalyticsDrillDirection' value='false' />
+                  <setting key='enableLegend' value='true' />
+                  <setting key='enableValueStoreParameter' value='false' />
+                  <setting key='enableValueStoreSettings' value='false' />
+                  <setting key='excludeValues' value='false' />
+                  <setting key='filterDimension' value='[]' />
+                  <setting key='filterSheets' value='[]' />
+                  <setting key='fontFamily' value='Arial, sans-serif' />
+                  <setting key='fontSize' value='1' />
+                  <setting key='fontSizeG' value='1' />
+                  <setting key='fontSizeLabels' value='1' />
+                  <setting key='inputColor' value='#53A9CB' />
+                  <setting key='labels' value='[]' />
+                  <setting key='legendColumns' value='1' />
+                  <setting key='legendPaddingX' value='0' />
+                  <setting key='legendPaddingY' value='0' />
+                  <setting key='legendPosition' value='&quot;top-right&quot;' />
+                  <setting key='legendRows' value='2' />
+                  <setting key='legendTitle' value='&quot;&quot;' />
+                  <setting key='legendType' value='&quot;color&quot;' />
+                  <setting key='linkColor' value='#CCFF66' />
+                  <setting key='localViewParameter' value='false' />
+                  <setting key='measure' value='CNT(DW_FACT_FLIGHTS)' />
+                  <setting key='measureFormat' value='' />
+                  <setting key='measureStyle' value='{&quot;style&quot;:&quot;decimal&quot;,&quot;maximumFractionDigits&quot;:2,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;unit&quot;:&quot;&quot;,&quot;displayUnits&quot;:&quot;none&quot;,&quot;useGrouping&quot;:true}' />
+                  <setting key='memberColors' value='[]' />
+                  <setting key='memberColorsSunburst' value='[]' />
+                  <setting key='outputColor' value='#CCFF66' />
+                  <setting key='scaleLegendColor' value='&quot;#59A14F&quot;' />
+                  <setting key='scaleLegendItems' value='3' />
+                  <setting key='scaleLegendOrder' value='&quot;high-low&quot;' />
+                  <setting key='selectedSheet' value='Sheet 1' />
+                  <setting key='selectedViz' value='sunburst' />
+                  <setting key='sequentialColorScheme' value='[null,null,null,[&quot;#d8b365&quot;,&quot;#f5f5f5&quot;,&quot;#5ab4ac&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#f5f5f5&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;]]' />
+                  <setting key='sourceColor' value='#e72168' />
+                  <setting key='targetColor' value='#183C92' />
+                  <setting key='textColor' value='#000000' />
+                  <setting key='textColorAxis' value='#666666' />
+                  <setting key='textColorGrid' value='#666666' />
+                  <setting key='textColorHeader' value='#666666' />
+                  <setting key='textColorLinks' value='#FFFFFF' />
+                  <setting key='tooltips' value='{&quot;node&quot;:&quot;&lt;DimensionName&gt;: &lt;DimensionValue&gt;\n&lt;MeasureName&gt;: &lt;MeasureValue&gt;&quot;}' />
+                  <setting key='useNewColorFormat' value='false' />
+                  <setting key='valueColors' value='[{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2018&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2019&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2020&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2021&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2022&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 1&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 2&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 3&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 4&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - ינואר&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - פברואר&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - מרס&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - אפריל&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - מאי&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - יוני&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - יולי&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - אוגוסט&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - ספטמבר&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - אוקטובר&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - נובמבר&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - דצמבר&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 31&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 30&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 29&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 28&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 27&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 26&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 25&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 24&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 23&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 22&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 21&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 20&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 19&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 18&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 17&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 16&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 15&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 14&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 13&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 12&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 11&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 10&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 9&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 8&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 7&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 6&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 5&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 4&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 3&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 2&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 1&quot;,&quot;color&quot;:&quot;#E15759&quot;}]' />
+                  <setting key='vennSetNumber' value='' />
+                </instance-settings>
+                <type-settings>
+                  <dashboard />
+                </type-settings>
+              </add-in>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6500' id='8' name='Sheet 1' w='64800' x='2100' y='1625'>
+          <layout-cache minwidth='422' type-h='fixed' type-w='scalable' />
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='19' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='663' forceUpdate='true' h='98000' id='7' param='[com.appsfortableau.extensions.show-me-more-share].[0.1.0].[https://extensions.appsfortableau.com/login/yJWmBYahjThxyt9%2FowLySQneSVcOffYz7yWhrs6Kd9Oxc3I4zP3CFptx3DeHYZVsiLDvMRDPVZRSfM8TDrH4Y%2FfHexitifiDRc1ZJpvy3AD8jQgnNfDGar4of4F4jlms2mkGh99CbULdy4jj46j9gg%3D%3D]' type-v2='dashboard-object' w='98400' x='800' y='1000'>
+                  <add-in add-in-id='com.appsfortableau.extensions.show-me-more-share' extension-url='https://extensions.appsfortableau.com/login/yJWmBYahjThxyt9%2FowLySQneSVcOffYz7yWhrs6Kd9Oxc3I4zP3CFptx3DeHYZVsiLDvMRDPVZRSfM8TDrH4Y%2FfHexitifiDRc1ZJpvy3AD8jQgnNfDGar4of4F4jlms2mkGh99CbULdy4jj46j9gg%3D%3D' extension-version='0.1.0' instance-id='DB5A3BB8AF5A4BBFA2A4777D2099E710'>
+                    <instance-settings>
+                      <setting key='backgroundColor' value='#FFFFFF' />
+                      <setting key='colorScheme' value='[&quot;#4e79a7&quot;,&quot;#a0cbe8&quot;,&quot;#f28e2b&quot;,&quot;#ffbe7d&quot;,&quot;#59a14f&quot;,&quot;#8cd17d&quot;,&quot;#b6992d&quot;,&quot;#f1ce63&quot;,&quot;#499894&quot;,&quot;#86bcb6&quot;,&quot;#e15759&quot;,&quot;#ff9d9a&quot;,&quot;#79706e&quot;,&quot;#bab0ac&quot;,&quot;#d37295&quot;,&quot;#fabfd2&quot;,&quot;#b07aa1&quot;,&quot;#d4a6c8&quot;,&quot;#9d7660&quot;,&quot;#d7b5a6&quot;]' />
+                      <setting key='convertedToNewActions' value='true' />
+                      <setting key='dashboardActions' value='[]' />
+                      <setting key='dimensionColors' value='[{&quot;fieldName&quot;:&quot;YEAR(departure date)&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date)&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date)&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date)&quot;,&quot;color&quot;:&quot;#F28E2B&quot;}]' />
+                      <setting key='dimensions' value='[&quot;YEAR(departure date)&quot;,&quot;QUARTER(departure date)&quot;,&quot;MONTH(departure date)&quot;,&quot;DAY(departure date)&quot;]' />
+                      <setting key='divergingColorScheme' value='[null,null,null,[&quot;#d8b365&quot;,&quot;#f5f5f5&quot;,&quot;#5ab4ac&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#f5f5f5&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;]]' />
+                      <setting key='enableAnalytics' value='false' />
+                      <setting key='enableAnalyticsDrillDepth' value='false' />
+                      <setting key='enableAnalyticsDrillDirection' value='false' />
+                      <setting key='enableLegend' value='true' />
+                      <setting key='enableValueStoreParameter' value='false' />
+                      <setting key='enableValueStoreSettings' value='false' />
+                      <setting key='excludeValues' value='false' />
+                      <setting key='filterDimension' value='[]' />
+                      <setting key='filterSheets' value='[]' />
+                      <setting key='fontFamily' value='Arial, sans-serif' />
+                      <setting key='fontSize' value='1' />
+                      <setting key='fontSizeG' value='1' />
+                      <setting key='fontSizeLabels' value='1' />
+                      <setting key='inputColor' value='#53A9CB' />
+                      <setting key='labels' value='[]' />
+                      <setting key='legendColumns' value='1' />
+                      <setting key='legendPaddingX' value='0' />
+                      <setting key='legendPaddingY' value='0' />
+                      <setting key='legendPosition' value='&quot;top-right&quot;' />
+                      <setting key='legendRows' value='2' />
+                      <setting key='legendTitle' value='&quot;&quot;' />
+                      <setting key='legendType' value='&quot;color&quot;' />
+                      <setting key='linkColor' value='#CCFF66' />
+                      <setting key='localViewParameter' value='false' />
+                      <setting key='measure' value='CNT(DW_FACT_FLIGHTS)' />
+                      <setting key='measureFormat' value='' />
+                      <setting key='measureStyle' value='{&quot;style&quot;:&quot;decimal&quot;,&quot;maximumFractionDigits&quot;:2,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;unit&quot;:&quot;&quot;,&quot;displayUnits&quot;:&quot;none&quot;,&quot;useGrouping&quot;:true}' />
+                      <setting key='memberColors' value='[]' />
+                      <setting key='memberColorsSunburst' value='[]' />
+                      <setting key='outputColor' value='#CCFF66' />
+                      <setting key='scaleLegendColor' value='&quot;#59A14F&quot;' />
+                      <setting key='scaleLegendItems' value='3' />
+                      <setting key='scaleLegendOrder' value='&quot;high-low&quot;' />
+                      <setting key='selectedSheet' value='Sheet 1' />
+                      <setting key='selectedViz' value='sunburst' />
+                      <setting key='sequentialColorScheme' value='[null,null,null,[&quot;#d8b365&quot;,&quot;#f5f5f5&quot;,&quot;#5ab4ac&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#a6611a&quot;,&quot;#dfc27d&quot;,&quot;#f5f5f5&quot;,&quot;#80cdc1&quot;,&quot;#018571&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#d8b365&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#5ab4ac&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;],[&quot;#543005&quot;,&quot;#8c510a&quot;,&quot;#bf812d&quot;,&quot;#dfc27d&quot;,&quot;#f6e8c3&quot;,&quot;#f5f5f5&quot;,&quot;#c7eae5&quot;,&quot;#80cdc1&quot;,&quot;#35978f&quot;,&quot;#01665e&quot;,&quot;#003c30&quot;]]' />
+                      <setting key='sourceColor' value='#e72168' />
+                      <setting key='targetColor' value='#183C92' />
+                      <setting key='textColor' value='#000000' />
+                      <setting key='textColorAxis' value='#666666' />
+                      <setting key='textColorGrid' value='#666666' />
+                      <setting key='textColorHeader' value='#666666' />
+                      <setting key='textColorLinks' value='#FFFFFF' />
+                      <setting key='tooltips' value='{&quot;node&quot;:&quot;&lt;DimensionName&gt;: &lt;DimensionValue&gt;\n&lt;MeasureName&gt;: &lt;MeasureValue&gt;&quot;}' />
+                      <setting key='useNewColorFormat' value='false' />
+                      <setting key='valueColors' value='[{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2018&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2019&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2020&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2021&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;YEAR(departure date) - 2022&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 1&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 2&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 3&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;QUARTER(departure date) - רבעון 4&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - ינואר&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - פברואר&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - מרס&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - אפריל&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - מאי&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - יוני&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - יולי&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - אוגוסט&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - ספטמבר&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - אוקטובר&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - נובמבר&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;MONTH(departure date) - דצמבר&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 31&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 30&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 29&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 28&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 27&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 26&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 25&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 24&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 23&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 22&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 21&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 20&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 19&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 18&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 17&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 16&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 15&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 14&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 13&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 12&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 11&quot;,&quot;color&quot;:&quot;#E15759&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 10&quot;,&quot;color&quot;:&quot;#4E79A7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 9&quot;,&quot;color&quot;:&quot;#F28E2B&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 8&quot;,&quot;color&quot;:&quot;#76B7B2&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 7&quot;,&quot;color&quot;:&quot;#EDC948&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 6&quot;,&quot;color&quot;:&quot;#B07AA1&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 5&quot;,&quot;color&quot;:&quot;#FF9DA7&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 4&quot;,&quot;color&quot;:&quot;#9C755F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 3&quot;,&quot;color&quot;:&quot;#BAB0AC&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 2&quot;,&quot;color&quot;:&quot;#59A14F&quot;},{&quot;fieldName&quot;:&quot;DAY(departure date) - 1&quot;,&quot;color&quot;:&quot;#E15759&quot;}]' />
+                      <setting key='vennSetNumber' value='' />
+                    </instance-settings>
+                    <type-settings>
+                      <dashboard />
+                    </type-settings>
+                  </add-in>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='52' h='6500' id='8' is-fixed='true' name='Sheet 1' w='64800' x='2100' y='1625'>
+                  <layout-cache minwidth='422' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{30EDC5DC-F803-4B7B-9081-C95CAC836CE2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[mn:order date:ok]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[none:Continent:nk]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[none:city:nk]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[none:country (DW_DIM_COUNTRIES):nk]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[none:country:nk]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[none:order id:ok]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[none:to airport id:nk]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[qr:order date:ok]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[yr:departure date:ok]</field>
+            <field>[federated.1d79q9p093c5hl13pi2my0l90aa5].[yr:order date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{745A6B5D-CF6C-47AF-89AB-8D160166634F}' />
+    </window>
+    <window class='dashboard' name='Sunburst'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{BF8056F4-9AE7-4290-A3C7-68C3A879B8EE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{88E802BE-ABD5-4145-AB0D-DAC38630547F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sunburst' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <dashboard-extension extension-version='0.1.0' id='com.appsfortableau.extensions.show-me-more-share'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Infotopics | AppsforTableau - ShowMeMore share</description>
+          <author email='support@appsfortableau.com' name='Infotopics | AppsforTableau' organization='Infotopics | AppsforTableau' website='https://appsfortableau.infotopics.com' />
+          <min-api-version>0.9</min-api-version>
+          <source-location>
+            <url>https://extensions.appsfortableau.com/login/yJWmBYahjThxyt9%2FowLySQneSVcOffYz7yWhrs6Kd9Oxc3I4zP3CFptx3DeHYZVsiLDvMRDPVZRSfM8TDrH4Y%2FfHexitifiDRc1ZJpvy3AD8jQgnNfDGar4of4F4jlms2mkGh99CbULdy4jj46j9gg%3D%3D</url>
+          </source-location>
+          <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAlhJREFUOI2Nkt9vy1EYh5/3bbsvRSySCZbIxI+ZCKsN2TKtSFyIrV2WuRCJuBiJWxfuxCVXbvwFgiEtposgLFJElnbU1SxIZIIRJDKTrdu+53Uhra4mce7Oe57Pcz7JOULFisViwZ+29LAzOSjQYDgz1ZcCvWuXV11MJpN+OS/lm6179teqH0yDqxPTCyKSA8DcDsyOmOprnCaeP7459pdgy969i0LTC3IO/RQMyoHcQN+3cnljW3dNIFC47qDaK3g7BwdTkwBaBELT4ZPOUVWgKl4ZBnjxJPUlMDnTDrp0pmr6RHFeEjjcUUXPDGeSEwDN0Xg8sivxMhJNjGzbHd8PkM3eHRfkrBM5NkcQaY2vUnTlrDIA0NoaX+KLXFFlowr14tvVpqb2MICzmQcKqxvbumv+NAhZGCCIPwEw6QWXKYRL/VUXO0+rAUJiPwAk5MIlgVfwPjjHLCL1APmHN94ZdqeYN+NW/mn6I4BvwQYchcLnwFhJMDiYmlRxAzjpKWZkYkUCcZ2I61wi37tLbYyjiN0fHk5Oz3nGSLSzBbNHCF35R7f6K1/hN9PRhek11FrymfQQQKB4+Gl05P2qNRtmETlXW7e+b2z01dfycGNbfFMAbqNyKp9Jp4rzOT8RYFs0njJkc2iqsCObvTsOsDWWqA5C1uFy+Uz/oXJeKwVT4h0RmPUXhi79vuC0Ku6yOffTK3g9lfxfDQAisY516sg5kfOCiJk7HoLt2cf9b/9LANAc7dznm98PagG1fUOZ9IP5uMB8Q4CPoyNvausapkTt3rNMuvdf3C/o6+czhtdwmwAAAABJRU5ErkJggg==</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </dashboard-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Infotopics | AppsforTableau - ShowMeMore share</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Story 1' />
+        <referenced-view instances='1' viewId='Sunburst' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>
